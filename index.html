@@ -46,13 +46,13 @@
             <h1 class="title is-1 publication-title">Towards Device Efficient Conditional Image Generation</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://nisargshah1999.github.io/">Nisarg A. Shah</a><sup>1</sup>, </span>
+                <a href="https://nisargshah1999.github.io/">Nisarg A. Shah</a><sup></sup>, </span>
               <span class="author-block">
-                <a href="https://gauravbharaj.github.io/">Gaurav Bharaj</a><sup>1</sup>,</span>
+                <a href="https://gauravbharaj.github.io/">Gaurav Bharaj</a><sup></sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>AI Foundation,</span>
+              <span class="author-block"><sup></sup>AI Foundation,</span>
               <!-- <span class="author-block"><sup>2</sup>UT Austin</span> -->
             </div>
             <h1 style="font-size:24px;font-weight:bold">BMVC 2022</h1>
@@ -61,7 +61,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2203.10363.pdf"
+                  <a href="https://bmvc2022.mpi-inf.mpg.de/0689.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -78,15 +78,15 @@
                     <span>arXiv</span>
                   </a>
                 </span>
-                <!-- Video Link. 
+                <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=v0Kab9wFwOY"
+                  <a href="https://bmvc2022.mpi-inf.mpg.de/0689_video.mp4"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
                     <span>Video</span>
-                  </a> -->
+                  </a> 
                 </span>
                 <!-- Dataset Link. 
                 <span class="link-block">
@@ -107,7 +107,7 @@
 
   <section class="hero teaser" id="video">
     <div class="container is-max-desktop">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/v0Kab9wFwOY" title="YouTube video player"
+      <iframe width="560" height="315" src="https://bmvc2022.mpi-inf.mpg.de/0689_video.mp4" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -131,19 +131,19 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We present a novel method for multi image domain and multi-landmark definition learning for small dataset
-              facial localization. Training a small dataset alongside a large(r) dataset helps with robust learning for
-              the former, and provides a universal mechanism for facial landmark localization for new and/or smaller
-              standard datasets. To this end, we propose a Vision Transformer encoder with a novel decoder with a
-              definition agnostic shared landmark semantic group structured prior, that is learnt, as we train on more
-              than one dataset concurrently. Due to our novel definition agnostic group prior the datasets may vary in
-              landmark definitions and domains. During the decoder stage we use cross- and self-attention, whose output
-              is later fed into domain/definition specific heads that minimize a Laplacian-log-likelihood loss. We
-              achieve state-of-the-art performance on standard landmark localization datasets such as COFW and WFLW,
-              when trained with a bigger dataset. We also show state-of-the-art performance on several varied image
-              domain small datasets for animals, caricatures, and facial portrait paintings. Further, we contribute a
-              small dataset (150 images) of pareidolias to show efficacy of our method. Finally, we provide several
-              analysis and ablation studies to justify our claims.
+                We present a novel algorithm to reduce tensor compute required by a conditional image generatio
+                n autoencoder without sacrificing quality of photo-realistic image generation. Our method is de
+                vice agnostic, and can optimize an autoencoder for a given CPU-only, GPU compute device(s) in a
+                bout normal time it takes to train an autoencoder on a generic workstation. We achieve this via
+                 a two-stage novel strategy where, first, we condense the channel weights, such that, as few as
+                 possible channels are used. Then, we prune the nearly zeroed out weight activations, and fine-
+                tune the autoencoder. To maintain image quality, fine-tuning is done via student-teacher traini
+                ng, where we reuse the condensed autoencoder as the teacher. We show performance gains for vari
+                ous conditional image generation tasks: segmentation mask to face images, face images to cartoo
+                nization, and finally CycleGAN-based model over multiple compute devices. We perform various ab
+                lation studies to justify the claims and design choices, and achieve real-time versions of vari
+                ous autoencoders on CPU-only devices while maintaining image quality, thus enabling at-scale de
+                ployment of such autoencoders.
             </p>
           </div>
         </div>
@@ -164,10 +164,10 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{ferman2022multi,
-  title={Multi-Domain Multi-Definition Landmark Localization for Small Datasets},
-  author={Ferman, David and Bharaj, Gaurav},
-  journal={arXiv preprint arXiv:2203.10358},
+      <pre><code>@article{shah2022alap,
+  title={Towards Device Efficient Conditional Image Generation},
+  author={Shah, Nisarg A and Bharaj, Gaurav},
+  journal={arXiv preprint arXiv:2203.10363},
   year={2022}
 }</code></pre>
     </div>
