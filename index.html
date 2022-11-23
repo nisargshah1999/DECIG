@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Multi-Domain Multi-Definition Landmark Localization for Small Datasets">
+  <meta name="keywords" content="Multi-Domain, Multi-Definition, Landmarks">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-Domain Multi-Definition Landmark Localization for Small Datasets</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Multi-Domain Multi-Definition Landmark Localization for Small
+              Datasets</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://davidcferman.github.io/">David Ferman</a><sup>1,2</sup>, </span>
+              <span class="author-block">
+                <a href="https://gauravbharaj.github.io/">Gaurav Bharaj</a><sup>1</sup>,</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>AI Foundation,</span>
+              <span class="author-block"><sup>2</sup>UT Austin</span>
+            </div>
+            <h1 style="font-size:24px;font-weight:bold">ECCV 2022</h1>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690637.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2203.10358.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=v0Kab9wFwOY"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/davidcferman/pareidolia-landmarks"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser" id="video">
+    <div class="container is-max-desktop">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/v0Kab9wFwOY" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+        </div>
+      </div>
+      <div class="content">
+        <img src="./static/images/overview.png" width="1070">
+      </div>
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We present a novel method for multi image domain and multi-landmark definition learning for small dataset
+              facial localization. Training a small dataset alongside a large(r) dataset helps with robust learning for
+              the former, and provides a universal mechanism for facial landmark localization for new and/or smaller
+              standard datasets. To this end, we propose a Vision Transformer encoder with a novel decoder with a
+              definition agnostic shared landmark semantic group structured prior, that is learnt, as we train on more
+              than one dataset concurrently. Due to our novel definition agnostic group prior the datasets may vary in
+              landmark definitions and domains. During the decoder stage we use cross- and self-attention, whose output
+              is later fed into domain/definition specific heads that minimize a Laplacian-log-likelihood loss. We
+              achieve state-of-the-art performance on standard landmark localization datasets such as COFW and WFLW,
+              when trained with a bigger dataset. We also show state-of-the-art performance on several varied image
+              domain small datasets for animals, caricatures, and facial portrait paintings. Further, we contribute a
+              small dataset (150 images) of pareidolias to show efficacy of our method. Finally, we provide several
+              analysis and ablation studies to justify our claims.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Poster</h2>
+        </div>
+      </div>
+      <div class="content" id="poster">
+        <img src="./static/images/poster.png" width="1070">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{ferman2022multi,
+  title={Multi-Domain Multi-Definition Landmark Localization for Small Datasets},
+  author={Ferman, David and Bharaj, Gaurav},
+  journal={arXiv preprint arXiv:2203.10358},
+  year={2022}
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+    </div>
+  </footer>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/pdf/2203.10358.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <div class="content">
+          This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
