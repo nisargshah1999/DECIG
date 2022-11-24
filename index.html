@@ -131,19 +131,16 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-                We present a novel algorithm to reduce tensor compute required by a conditional image generatio
-                n autoencoder without sacrificing quality of photo-realistic image generation. Our method is de
-                vice agnostic, and can optimize an autoencoder for a given CPU-only, GPU compute device(s) in a
-                bout normal time it takes to train an autoencoder on a generic workstation. We achieve this via
-                 a two-stage novel strategy where, first, we condense the channel weights, such that, as few as
-                 possible channels are used. Then, we prune the nearly zeroed out weight activations, and fine-
-                tune the autoencoder. To maintain image quality, fine-tuning is done via student-teacher traini
-                ng, where we reuse the condensed autoencoder as the teacher. We show performance gains for vari
-                ous conditional image generation tasks: segmentation mask to face images, face images to cartoo
-                nization, and finally CycleGAN-based model over multiple compute devices. We perform various ab
-                lation studies to justify the claims and design choices, and achieve real-time versions of vari
-                ous autoencoders on CPU-only devices while maintaining image quality, thus enabling at-scale de
-                ployment of such autoencoders.
+              We present a novel algorithm to reduce tensor compute required by a conditional image generation autoencoder 
+              without sacrificing quality of photo-realistic image generation. Our method is device agnostic, and can 
+              optimize an autoencoder for a given CPU-only, GPU compute device(s) in about normal time it takes to train an 
+              autoencoder on a generic workstation. We achieve this via a two-stage novel strategy where, first, we condense the 
+              channel weights, such that, as few as possible channels are used. Then, we prune the nearly zeroed out weight activations, 
+              and fine-tune the autoencoder. To maintain image quality, fine-tuning is done via student-teacher training, where we reuse the 
+              condensed autoencoder as the teacher. We show performance gains for various conditional image generation tasks: segmentation mask to 
+              face images, face images to cartoonization, and finally CycleGAN-based model over multiple compute devices. We perform various ablation 
+              studies to justify the claims and design choices, and achieve real-time versions of various autoencoders on CPU-only devices while 
+              maintaining image quality, thus enabling at-scale deployment of such autoencoders.
             </p>
           </div>
         </div>
